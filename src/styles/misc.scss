@@ -1,0 +1,57 @@
+.cursor{
+    pointer-events: none;
+    width: 26px;
+    height: 26px;
+    border: 2px solid red;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    z-index: 1200;
+    position: absolute;
+    cursor: none;
+}
+
+.logo{
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+
+    img{
+        height: 100px;
+        width: 150px;
+    }
+}
+
+.franchisebtn{
+    text-decoration: none;
+    background-color: #6d3d0f;
+    color: #fff100;
+    position: fixed;
+    top: 1rem;
+    right: 5rem;
+    letter-spacing: 5px;
+    font: 700 14px;
+    border: none;
+    padding: 0.7rem 1rem;
+    border-radius: 7px;
+    transform-origin: bottom;
+    transition: transform 0.5s;
+    &:hover{
+        transform: skewX(-10deg);
+    }
+}
+
+.scrollbtn{
+    color: #fff;
+    font-size: 4rem;
+    position: absolute;
+    left: 50%;
+    bottom: 5rem;
+    transform: translateX(-25%);
+    animation: mousescrollanimation 0.5s linear infinite alternate;
+}
+
+@keyframes mousescrollanimation{
+    to{
+        transform: translate(-25%, -10px);
+    }
+}

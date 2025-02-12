@@ -1,0 +1,54 @@
+footer{
+    
+    width: 100%;
+    background-color: #fff100;
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+    padding: 13rem 6rem;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+
+    h1{
+        font-size: 62px;
+        font-weight: 800;
+        color: #ed1e79;
+        font-style: italic;
+    }
+
+    aside{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    
+
+    a{
+        color: #ed1e79;
+        text-transform: uppercase;
+        font: 500 14px;
+        text-decoration: none;
+        letter-spacing: 3px;
+        line-height: 1.9;
+        transition: all 0.5s;
+    }
+}
+div{
+    color: #ed1e79;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+}
+
+&:last-of-type{
+    align-items: flex-end;
+}
+}
+
+.footer{
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    z-index: -2;
+    position: absolute;
+}
